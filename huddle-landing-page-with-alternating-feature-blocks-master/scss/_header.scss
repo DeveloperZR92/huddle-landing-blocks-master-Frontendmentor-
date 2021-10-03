@@ -1,0 +1,128 @@
+@import './variables';
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/bg-hero-desktop.svg);
+}
+
+.navbar {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    width: 200px;
+    height: 31px;
+  }
+
+  .try {
+    width: 200px;
+    height: 48px;
+    color: black;
+    background-color: white;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.header-content {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  display: flex;
+
+  .header-text {
+    width: 60%;
+    height: 100%;
+    margin-top: 120px;
+
+    .build {
+      margin-bottom: 20px;
+    }
+
+    .get {
+      width: 280px;
+      height: 58px;
+      margin-top: 30px;
+      background-color: $Pink;
+      color: white;
+      border-radius: 40px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .header-picture {
+    width: 100%;
+    height: 100%;
+    margin-left: 70px;
+
+    .mockups {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .header {
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+  .navbar {
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+
+    .logo {
+      width: 104px;
+      height: 16px;
+    }
+
+    .try {
+      width: 96px;
+      height: 24px;
+    }
+  }
+
+  .header-content {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-text {
+    width: 100%;
+    min-width: 375px;
+    height: 50%;
+    text-align: center;
+    margin-top: 0 !important;
+    margin-bottom: 70px;
+  }
+
+  .header-picture {
+    max-width: 80%;
+    min-width: 375px;
+    max-height: 50%;
+    margin: 0 auto !important;
+    // margin-left: 0 !important;
+
+    .mockups {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

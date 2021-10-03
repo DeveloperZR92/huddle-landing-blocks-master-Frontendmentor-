@@ -1,0 +1,161 @@
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: $VeryDarkCyan;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 150px;
+  color: white;
+  font-size: 15px;
+}
+
+.footer-huddle {
+  width: 100%;
+}
+.footer-logo {
+  background-color: white;
+  fill: red;
+}
+
+.info {
+  width: 100%;
+  height: 100%;
+  margin-left: 50px;
+  color: white;
+
+  .location {
+    width: 90%;
+    display: flex;
+    padding: 10px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    p {
+      margin-left: 20px;
+    }
+  }
+
+  .phone {
+    width: 90%;
+    display: flex;
+    padding: 15px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    p {
+      margin-left: 20px;
+    }
+  }
+
+  .email {
+    width: 90%;
+    display: flex;
+    padding: 10px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    p {
+      margin-left: 20px;
+    }
+  }
+}
+
+.links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+
+  li {
+    list-style: none;
+    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+.social-links {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+
+  .social-icons {
+    display: flex;
+
+    a {
+      padding: 5px;
+      color: white;
+
+      &:hover {
+        color: $Pink;
+      }
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+}
+
+.copy {
+  margin-top: 150px;
+}
+
+@media (max-width: 475px) {
+  .footer {
+    width: 100%;
+    height: 100% !important;
+    padding-top: 200px;
+    @include displayColumnCenter;
+  }
+
+  .links {
+    width: 100%;
+    height: 100% !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-links {
+    width: 100%;
+    height: 100% !important;
+
+    .icons {
+      margin-top: 40px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        padding: 15px;
+      }
+    }
+
+    .copy {
+      margin-top: 50px !important;
+    }
+  }
+}
