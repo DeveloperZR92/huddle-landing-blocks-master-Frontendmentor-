@@ -6,16 +6,12 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 150px;
-  color: white;
   font-size: 15px;
+  color: white;
 }
 
 .footer-huddle {
   width: 100%;
-}
-.footer-logo {
-  background-color: white;
-  fill: red;
 }
 
 .info {
@@ -42,7 +38,7 @@
   .phone {
     width: 90%;
     display: flex;
-    padding: 15px;
+    padding: 10px;
 
     img {
       width: 20px;
@@ -61,7 +57,7 @@
 
     img {
       width: 20px;
-      height: 20px;
+      height: 18px;
     }
 
     p {
@@ -99,6 +95,7 @@
 
   .social-icons {
     display: flex;
+    margin-top: 32px;
 
     a {
       padding: 5px;
@@ -116,7 +113,7 @@
 }
 
 .copy {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 @media (max-width: 475px) {

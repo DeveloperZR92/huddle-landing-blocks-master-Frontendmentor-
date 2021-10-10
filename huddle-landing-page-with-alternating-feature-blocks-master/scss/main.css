@@ -464,17 +464,12 @@
       -ms-flex-align: center;
           align-items: center;
   padding-top: 150px;
-  color: white;
   font-size: 15px;
+  color: white;
 }
 
 .footer-huddle {
   width: 100%;
-}
-
-.footer-logo {
-  background-color: white;
-  fill: red;
 }
 
 .info {
@@ -506,7 +501,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 15px;
+  padding: 10px;
 }
 
 .info .phone img {
@@ -528,7 +523,7 @@
 
 .info .email img {
   width: 20px;
-  height: 20px;
+  height: 18px;
 }
 
 .info .email p {
@@ -571,6 +566,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 32px;
 }
 
 .social-links .social-icons a {
@@ -587,7 +583,7 @@
 }
 
 .copy {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 
 @media (max-width: 475px) {
